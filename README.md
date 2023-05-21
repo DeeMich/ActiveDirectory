@@ -35,8 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/XRItOc3.png" height="80%" width="80%" alt="icmpv4"/>
 </p>
 <p>
-First created 2 Virtual Machines. The first being the domain controler (DC-1) and the second being the cilent (C-1). Then I set the DC's NIC Private address to be static. This will keep the IP address from chaning. I had to make sure connection was able to flow between the VM's, so I ping DC-1's private IP address (ping -t (ip.address)), only to see the connection had timed out.
-I logged in for the Domain Controler (DC) and enabled anything that had ICMPV4. Once I did this, connection was able to flow. 
+First created 2 Virtual Machines. The first being the domain controler (DC-1) and the second being the cilent (Cilent-1). Then I set the DC-1's NIC Private address to be static. This will keep the IP address from changing. In order to check that the connection was flowing between the VM's, I pinged DC-1's private IP address (ping -t (ip.address)), which showed that the connection was timed out. I then logged in under the Domain Controler (DC) and enabled anything that had ICMPV4. Once I did this, connection was able to flow. 
 </p>
 <br />
 
