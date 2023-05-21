@@ -38,14 +38,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
 First created 2 Virtual Machines. The first being the domain controler (DC-1) and the second being the cilent (Cilent-1). Then I set the DC-1's NIC Private address to be static. This will keep the IP address from changing. In order to check that the connection was flowing between the VM's, I ping DC-1's private IP address (ping -t (ip.address)), which showed that the connection was timed out. I then logged in under the Domain Controler (DC) and went to it's firewall to enable those profile whose protocol was ICMPV4. Once I did this, I went back into Cilent-1's desktop and ping DC-1 again to find the connection flowing.
 <p>
 <br />
+  
+  <h2>Install Active Directory</h2>
+  
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OyWr8DE.png" height="80%" width="80%" alt="ADInstall"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/pEfnWxA.png" height="80%" width="80%" alt="Restartlogin"/>
+</p>
+<p>
+  I logged into DC-1 to install Active Directory Domain Services and set up a new forest as stepdomain.com. Once the system restarted, I was able to log into DC-1 as stepdomain.com\labuser. 
 </p>
 <br />
-
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
