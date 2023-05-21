@@ -74,6 +74,6 @@ Cilent-1 needed to be joined to stepdomain.com, so it's virtual network interfac
 <img src="https://i.imgur.com/hh3oZDb.png" height="80%" width="80%" alt="dns."/>
 </p>
 <p>
-<img src=" https://i.imgur.com/FSqnvL9.png" height="80%" width="80%" alt="dnsset"/>
+<img src="https://i.imgur.com/FSqnvL9.png" height="80%" width="80%" alt="dnsset"/>
 </p>
 <br />
