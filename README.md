@@ -64,4 +64,14 @@ First created 2 Virtual Machines. The first being the domain controler (DC-1) an
 <p>
 From DC-1, I went into Active Directory User and Computers (ADUC) and created organizational units for ADMIN and EMPLOYEES. Next, I needed an admin's account and although the system had already provided me with some, I created a new adminstrative account. Tom Cool became the user. In order to make the user an actual domain admin, I went into the properties and under members of, added the "Domains Admin" group. Once I did that, I logged off and logged back on, but under the user created.
 </p>
+
+ <h2>Join Cilent-1 and Setup Remote Desktop</h2>
+ 
+<p>
+Cilent-1 needed to be joined to stepdomain.com, so it's virtual network interface card (NIC), had to be changed so that it's DNS was set to the same domain controller that runs DC-1's ip address. 
+</p> 
+<p>
+<img src="https://i.imgur.com/hh3oZDb.png" height="80%" width="80%" alt="dns."/>
+</p>
+ 
 <br />
