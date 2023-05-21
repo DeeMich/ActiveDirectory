@@ -77,3 +77,13 @@ Cilent-1 needed to be joined to stepdomain.com, so it's virtual network interfac
 <img src="https://i.imgur.com/FSqnvL9.png" height="80%" width="80%" alt="dnsset"/>
 </p>
 <br />
+<p>
+Next the remote desktop was setup for nonadminstrative users. Cilent-1 needed to be joined to stepdomain.com, so it's virtual network interface card (NIC), had to be changed so that it's DNS was set to the same domain controller that runs DC-1's ip address. 
+</p> 
+<p>
+<img src="https://i.imgur.com/1jXicZS.png" height="80%" width="80%" alt="domainusers"/>
+</p>
+<p>
+Access was then given to all users within the domain group. 
+</p> 
+<br />
