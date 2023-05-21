@@ -40,6 +40,9 @@ First created 2 Virtual Machines. The first being the domain controler (DC-1) an
 <p>
 <img src="https://i.imgur.com/iv9fsBR.png" height="80%" width="80%" alt="firewall"/>
 </p>
+<p>
+<img src="https://i.imgur.com/1C0PdDz.png" height="80%" width="80%" alt="reply"/>
+</p>
 </p>
 I then logged in under the Domain Controler (DC) and went to it's firewall to enable those profile whose protocol was ICMPV4. Once I did this, I went back into Cilent-1's desktop and ping DC-1 again to find the connection flowing.
 <p>
