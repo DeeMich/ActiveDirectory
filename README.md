@@ -51,10 +51,17 @@ First created 2 Virtual Machines. The first being the domain controler (DC-1) an
   I logged into DC-1 to install Active Directory Domain Services and set up a new forest as stepdomain.com. Once the system restarted, I was able to log into DC-1 as stepdomain.com\labuser. 
 </p>
 <br />
+
+
+  <h2>Create Admin and Normal User Account in AD</h2>
+  
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OZIRAko.png" height="80%" width="80%" alt="TC"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/COEx759.png" height="80%" width="80%" alt="TCProp."/>
+</p>
+<p>
+From DC-1, I went into Active Directory User and Computers (ADUC) and created both ADMIN and EMPLOYEES organizational units. Next, I needed an admin's account and although the system had already provided me with some, I created a new adminstrative account. Tom Cool became the user. In order to make the user an actual domain admin, I went into the properties and under member of, added the "Domains Admin" group. 
 </p>
 <br />
