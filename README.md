@@ -62,6 +62,6 @@ First created 2 Virtual Machines. The first being the domain controler (DC-1) an
 <img src="https://i.imgur.com/COEx759.png" height="80%" width="80%" alt="TCProp."/>
 </p>
 <p>
-From DC-1, I went into Active Directory User and Computers (ADUC) and created both ADMIN and EMPLOYEES organizational units. Next, I needed an admin's account and although the system had already provided me with some, I created a new adminstrative account. Tom Cool became the user. In order to make the user an actual domain admin, I went into the properties and under member of, added the "Domains Admin" group. 
+From DC-1, I went into Active Directory User and Computers (ADUC) and created organizational units for ADMIN and EMPLOYEES. Next, I needed an admin's account and although the system had already provided me with some, I created a new adminstrative account. Tom Cool became the user. In order to make the user an actual domain admin, I went into the properties and under members of, added the "Domains Admin" group. Once I did that, I logged off and logged back on, but under the user created.
 </p>
 <br />
