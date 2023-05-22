@@ -87,3 +87,11 @@ Next the remote desktop was setup for nonadminstrative users. Cilent-1 needed to
 Access was then given to all users within the domain group. 
 </p> 
 <br />
+
+<p>
+<img src="https://i.imgur.com/JzAnJCO.png" height="80%" width="80%" alt="createaccounts"/>
+</p>
+<p>
+Lastly Powershell ISE was ran as an administrator in order to run a script that created 1000 accounts. These were observed in Active Directory User and Computers and tested on by logging into Cilent-1 with one of the new accounts. 
+</p> 
+<br />
