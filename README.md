@@ -92,6 +92,6 @@ Access was then given to all users within the domain group.
 <img src="https://i.imgur.com/JzAnJCO.png" height="80%" width="80%" alt="createaccounts"/>
 </p>
 <p>
-Lastly Powershell ISE was ran as an administrator in order to run a script that created 1000 accounts. These were observed in Active Directory User and Computers and tested on by logging into Cilent-1 with one of the new accounts. 
+Lastly Powershell ISE was ran as an administrator in order to run a script that created 1000 accounts. These were observed in Active Directory User and Computers and tested on by logging into Cilent-1 with one of the new accounts. I came across an error that denied the account access as an admin. This required me to go to that account into properties and under Members Of, add  add the Domain Admin group.
 </p> 
 <br />
