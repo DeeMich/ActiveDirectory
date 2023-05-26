@@ -35,7 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/XRItOc3.png" height="80%" width="80%" alt="icmpv4"/>
 </p>
 <p>
-First created 2 Virtual Machines. The first being the domain controler (DC-1) (Windows 2022) and the second being the cilent (Cilent-1) (Windows 10). Then I set the DC-1's NIC Private address to be static. This will keep the IP address from changing. In order to check that the connection was flowing between the VM's, I ping DC-1's private IP address (ping -t (ip.address)), which showed that the connection was timed out. I then logged in under the Domain Controler (DC) and went to it's firewall to enable those profile whose protocol was ICMPV4. Once I did this, I went back into Cilent-1's desktop and ping DC-1 again to find the connection flowing.
+First create 2 Virtual Machines. The first being the domain controler (DC-1) (Windows 2022) and the second being the cilent (Cilent-1) (Windows 10). Then set the DC-1's NIC Private address to be static. This will keep the IP address from changing. Next check that the connection is flowing between the VM's by pinging DC-1's private IP address (ping -t (ip.address)). It will show that the connection is timed out. To fix this, log in under the Domain Controler (DC) and go to it's firewall to enable those profile whose protocol is ICMPV4. Once done, go back into Cilent-1's desktop and ping DC-1 again to see the connection flowing.
 <p>
 <br />
   
