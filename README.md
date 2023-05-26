@@ -48,7 +48,7 @@ First create 2 Virtual Machines. The first being the domain controler (DC-1) (Wi
 <img src="https://i.imgur.com/pEfnWxA.png" height="80%" width="80%" alt="Restartlogin"/>
 </p>
 <p>
-  I logged into DC-1 to install Active Directory Domain Services and set up a new forest as stepdomain.com. Once the system restarted, I was able to log into DC-1 as stepdomain.com\labuser. 
+  Log into DC-1 to install Active Directory Domain Services and set up a new forest as stepdomain.com. Once the system restarts, it should successfully log into DC-1 as stepdomain.com\labuser. 
 </p>
 <br />
 
@@ -62,14 +62,12 @@ First create 2 Virtual Machines. The first being the domain controler (DC-1) (Wi
 <img src="https://i.imgur.com/COEx759.png" height="80%" width="80%" alt="TCProp."/>
 </p>
 <p>
-From DC-1, I went into Active Directory User and Computers (ADUC) and created organizational units for ADMIN and EMPLOYEES. Next, I needed an admin's account and although the system had already provided me with some, I created a new adminstrative account. Tom Cool became the user. In order to make the user an actual domain admin, I went into the properties and under members of, added the "Domains Admin" group. Once I did that, I logged off and logged back on, but under the user created.
+From DC-1, go into Active Directory User and Computers (ADUC) and create organizational units for ADMIN and EMPLOYEES. Then make a new adminstrative account. This admin account was for "Tom Cool". However in order to make the account an actual domain admin, go into the properties and under members of, add the "Domains Admin" group. Once done, log off and log back on, but under the user created.
 </p>
 
  <h2>Join Cilent-1 and Setup Remote Desktop</h2>
  
-<p>
-Cilent-1 needed to be joined to stepdomain.com, so it's virtual network interface card (NIC), had to be changed so that it's DNS was set to the same domain controller that runs DC-1's ip address. 
-</p> 
+
 <p>
 <img src="https://i.imgur.com/hh3oZDb.png" height="80%" width="80%" alt="dns."/>
 </p>
@@ -78,13 +76,13 @@ Cilent-1 needed to be joined to stepdomain.com, so it's virtual network interfac
 </p>
 <br />
 <p>
-Next the remote desktop was setup for nonadminstrative users. Cilent-1 needed to be joined to stepdomain.com, so it's virtual network interface card (NIC), had to be changed so that it's DNS was set to the same domain controller that runs DC-1's ip address. 
+The remote desktop is setup for nonadminstrative users. Cilent-1 needs to be joined to stepdomain.com, so it's virtual network interface card (NIC), has to be changed so that it's DNS is set to the same domain controller that runs DC-1's ip address.  
 </p> 
 <p>
 <img src="https://i.imgur.com/1jXicZS.png" height="80%" width="80%" alt="domainusers"/>
 </p>
 <p>
-Access was then given to all users within the domain group. 
+Access can then be given to all users within the domain group. 
 </p> 
 <br />
 
@@ -92,6 +90,6 @@ Access was then given to all users within the domain group.
 <img src="https://i.imgur.com/JzAnJCO.png" height="80%" width="80%" alt="createaccounts"/>
 </p>
 <p>
-Lastly Powershell ISE was ran as an administrator in order to run a script that created 1000 accounts. These were observed in Active Directory User and Computers and tested on by logging into Cilent-1 with one of the new accounts. I came across an error that denied the account access as an admin. This required me to open up properties of that account and under Members Of, add the Domain Admin group.
+Lastly run Powershell ISE as an administrator in order to run a script that creates 1000 accounts. Observe the accounts in Active Directory User and Computers and test them by logging in and out of Cilent-1 with them. If an error pops up that denies the account access as an admin, go into properties of that account and under Members Of, add the Domain Admin group.
 </p> 
 <br />
